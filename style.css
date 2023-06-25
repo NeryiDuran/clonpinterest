@@ -105,20 +105,62 @@ header nav img .iconopinterest {
 }
 
 main {
-    display: flex;
-    flex-direction: row;
     padding-top: 80px;
 }
 
-section .tarjeta {
+/* section .tarjeta {
     display: flex;
     flex-direction: column;
     width: 15%;
     padding: 35px;
     gap: 15px;
-}
+} */
 
 .galery1 {
     border-radius: 25px;
     object-fit: cover;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+      'item item2 item3 item4 item5';
+    gap: 10px;
+}
+
+.grid-item {
+    grid-area: item;
+}
+
+.grid-item-2 {
+    grid-area: item2;
+}
+
+.grid-item-3 {
+    grid-area: item3;
+}
+
+.grid-item-4 {
+    grid-area: item4;
+}
+
+.grid-item-5 {
+    grid-area: item5;
+}
+
+.tarjeta {
+    margin-bottom: 15px;
+}
+
+.tarjeta img{
+    max-width: 100%;
+}
+
+.tarjeta img:hover{
+    transform: scale(1.02);
+}
+
+.tarjeta p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
 }
